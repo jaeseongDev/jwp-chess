@@ -38,7 +38,7 @@ export function createChessBoardAndPieces(gridDto, piecesResponseDto) {
                 if (pieceName === pieceName.toUpperCase()) {
                     pieceName = "B" + pieceName.toUpperCase();
                 } else {
-                    pieceName = "W" + pieceName.toLowerCase();
+                    pieceName = "W" + pieceName.toUpperCase();
                 }
                 piece.src = "images/" + pieceName + ".png";
                 newTd.appendChild(piece);
